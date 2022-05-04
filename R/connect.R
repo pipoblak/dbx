@@ -150,6 +150,7 @@ dbxConnect <- function(url=NULL, adapter=NULL, storage_tz=NULL, variables=list()
     DBI::dbExecute(conn, "SET timezone TO 'UTC'")
   } else if (isRMySQL(conn) || isODBCMySQL(conn)) {
     DBI::dbExecute(conn, "SET time_zone = '+00:00'")
+    DBI::dbExecute(conn, "SET NAMES utf8")
   }
 
   for (k in names(variables)) {

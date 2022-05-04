@@ -1,4 +1,4 @@
-# dbx
+# dbx - DEFAULT ENCODE TO UTF-8 Mysql
 
 :fire: A fast, easy-to-use database library for R
 
